@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 40px);
+  }
+
+  #logo {
+    width: 272px; /* Increase the width to make it bigger */
+    height: 92px; /* Increase the height to maintain aspect ratio */
+    background-image: url("https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+
+
+  .search-container {
+    position: relative;
+  }
+
+
+
+  .search-input {
+   display: flex;
+   z-index: 3;
+   height: 44px;
+   background: #fff;
+   border: 1px solid lightgray;
+   box-shadow: none;
+   border-radius: 24px;
+   margin: 0 auto;
+   width: calc(632 + 6px);
+   width: 584px;
+   max-width: 584px;
+   outline: none;
+  }
+
+
+  .search-input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .search-input:valid {
+    padding-left: 30px; /* Increase left padding when input is valid */
+  }
+
+ 
+  .btn-google{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .center-div{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+@media (max-width: 584px) {
+.search-input {
+  width: auto; /* Adjust width to a smaller value */
+}
+}
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .upper-right {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Arial, sans-serif;
+    display: flex; /* Added */
+    gap: 30px
+  }
+  a {
+text-decoration: none;
+color: black; /* Sets the default color to light gray */
+background-color: transparent;
+font-size: 12px;
+}
+
+a:focus {
+color: blue; /* Changes the color to blue when in focus */
+}
+
+.p-head {
+    color: #d93025;
+    font-size: 20px;
+    margin: 25px 35px;
+  }
+
+  .line {
+    border-bottom: 1px solid #ebebeb;
+  }
+
+  .p-advanced {
+    font-size: 16px;
+    color: #33333;
+  }
+  .div-advanced {
+    margin: 40px;
+  }
+
+  .row-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .left {
+    width: 200px;
+
+  }
+
+  .right {
+    width: 385px;
+  }
+
+  .p-font{
+    font-size:13px;
+    vertical-align: middle;
+
+  }
+  .btn-advanced {
+    box-shadow: none;
+    background-color: #4d90fe;
+    border: 1px solid #3079ed;
+    color: #fff
+  }
+  .btn-div{
+    display: flex;
+    justify-content: flex-end;
+    width: 625px;
+  }
